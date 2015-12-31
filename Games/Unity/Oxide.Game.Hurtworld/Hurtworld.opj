@@ -1,6 +1,6 @@
 {
   "Name": "Hurtworld",
-  "TargetDirectory": "D:\\Servers\\Game\\Hurtworld\\Hurtworld_Data\\Managed",
+  "TargetDirectory": "C:\\Users\\raedwulf\\Documents\\hw31122015",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -1075,6 +1075,30 @@
             "MSILHash": "SjDEQIQ5YtjsKwjMcMt95iTnFfvuF5yL6v5CIn2xvKk=",
             "BaseHookName": null,
             "HookCategory": "Player"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 0,
+            "ReturnBehavior": 1,
+            "ArgumentBehavior": 1,
+            "ArgumentString": null,
+            "HookTypeName": "Simple",
+            "Name": "OnLootSpawnerUpdate",
+            "HookName": "OnLootSpawnerUpdate",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "LootSpawner",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Update",
+              "ReturnType": "System.Void",
+              "Parameters": []
+            },
+            "MSILHash": "QLjSD2dSOHHhyEIe/32qhvwbFjSCAJc+lHse4NDQ/ew=",
+            "BaseHookName": null,
+            "HookCategory": "Entity"
           }
         }
       ]

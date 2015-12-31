@@ -186,6 +186,19 @@ namespace Oxide.Game.Hurtworld
 
         #endregion
 
+        #region Entity Hooks
+
+        /// <summary>
+        /// Called when the loot spawner is updated
+        /// </summary>
+        [HookMethod("OnLootSpawnerUpdate")]
+        private object OnLootSpawnerUpdate(LootSpawner lootSpawner)
+        {
+            return Interface.Oxide.CallHook("OnLootSpawnerUpdate", lootSpawner);
+        }
+
+        #endregion
+
         #region Server Hooks
 
         /// <summary>
