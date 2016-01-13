@@ -39,13 +39,14 @@ namespace Oxide.Game.ReignOfKings.Libraries.Covalence
         /// </summary>
         public object Object { get; private set; }
 
-        private Player player;
+        private readonly Player player;
 
         internal ReignOfKingsLivePlayer(Player player)
         {
             this.player = player;
             steamid = player.Id;
-            Object = player;
+            Character = this;
+            Object = player.CurrentCharacter;
         }
 
         #endregion

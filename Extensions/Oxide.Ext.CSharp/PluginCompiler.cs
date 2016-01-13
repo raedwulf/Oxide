@@ -71,7 +71,7 @@ namespace Oxide.Plugins
         private volatile int lastId;
         private volatile bool ready;
         private Core.Libraries.Timer.TimerInstance idleTimer;
-        
+
         public PluginCompiler()
         {
             compilations = new Hash<int, Compilation>();
@@ -80,16 +80,9 @@ namespace Oxide.Plugins
 
         internal void Compile(CompilablePlugin[] plugins, Action<Compilation> callback)
         {
-            if (!CheckCompiler())
-            {
-                OnCompilerFailed("Compiler couldn't be started.");
-                return;
-            }
-
             var id = lastId++;
             var compilation = new Compilation(id, callback, plugins);
             compilations[id] = compilation;
-            
             compilation.Prepare(() => EnqueueCompilation(compilation));
         }
 
@@ -263,7 +256,10 @@ namespace Oxide.Plugins
             }
             catch (Exception ex)
             {
+                process?.Dispose();
+                process = null;
                 Interface.Oxide.LogException("Exception while starting compiler: ", ex);
+                if (ex.GetBaseException() != ex) Interface.Oxide.LogException("BaseException: ", ex.GetBaseException());
             }
             if (process == null) return false;
             client = new ObjectStreamClient<CompilerMessage>(process.StandardOutput.BaseStream, process.StandardInput.BaseStream);

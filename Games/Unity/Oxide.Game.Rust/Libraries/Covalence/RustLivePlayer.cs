@@ -24,19 +24,20 @@ namespace Oxide.Game.Rust.Libraries.Covalence
         /// <summary>
         /// Gets the owner of this character
         /// </summary>
-        public ILivePlayer Owner { get { return this; } }
+        public ILivePlayer Owner => this;
 
         /// <summary>
         /// Gets the object that backs this character, if available
         /// </summary>
         public object Object { get; private set; }
 
-        private BasePlayer player;
+        private readonly BasePlayer player;
 
         internal RustLivePlayer(BasePlayer player)
         {
             this.player = player;
             steamid = player.userID;
+            Character = this;
             Object = player;
         }
 

@@ -33,13 +33,14 @@ namespace Oxide.Game.Hurtworld.Libraries.Covalence
         /// </summary>
         public object Object { get; private set; }
 
-        private PlayerSession session;
+        private readonly PlayerSession session;
 
         internal HurtworldLivePlayer(PlayerSession session)
         {
             this.session = session;
             steamid = (ulong)session.SteamId;
-            Object = session;
+            Character = this;
+            Object = session.WorldPlayerEntity;
         }
 
         #endregion
