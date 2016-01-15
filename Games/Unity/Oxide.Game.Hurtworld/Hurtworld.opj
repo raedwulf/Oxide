@@ -1,6 +1,6 @@
 {
   "Name": "Hurtworld",
-  "TargetDirectory": "C:\\Users\\raedwulf\\Documents\\hw13012016",
+  "TargetDirectory": "D:\\Servers\\Game\\Hurtworld\\Hurtworld_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -121,7 +121,7 @@
                 "System.String"
               ]
             },
-            "MSILHash": "L3TwL/A+bfdht36hBUNrYeddhsV5V0pSz5zU3YST3WM=",
+            "MSILHash": "OHdP9KLJ1UKPRJdLxCRp6JdNca1bjl5kmdppP1l34BM=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -227,7 +227,7 @@
                 "System.Boolean"
               ]
             },
-            "MSILHash": "IX5Qbix5VwCZD6yycYDu762TKm9XHMmn7RhYzdrnsic=",
+            "MSILHash": "pQFzR9u5ZA/y/pYiyMLOP8yTT3ARo9wxzToW2ywFzmM=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -332,7 +332,7 @@
                 "UnityEngine.Vector3"
               ]
             },
-            "MSILHash": "drHsJ7T+kVdgW4isZvmPN7QxN80PXBoi56mgUvaYZ4o=",
+            "MSILHash": "q5IV8ikjEam3IuLzXiohyzdUDtGRrplzWoWJqMWAFK4=",
             "BaseHookName": null,
             "HookCategory": "Vehicle"
           }
@@ -610,7 +610,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "xnlwdHTfaof0ba+C1zGSFqTntuWfwq+nyemjD3RMzQI=",
+            "MSILHash": "cOBKEokpaOSlGgz+vC2qIip1QIlSr6nhB6gxluRJiqY=",
             "BaseHookName": null,
             "HookCategory": "_WIP"
           }
@@ -698,7 +698,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 7,
+            "InjectionIndex": 9,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 4,
             "ArgumentString": "a0, a1.sender",
@@ -717,7 +717,7 @@
                 "uLink.NetworkMessageInfo"
               ]
             },
-            "MSILHash": "mfVUdAPGxchfXb21vEuTjBePMZUgBGoRUIywFqEXm/U=",
+            "MSILHash": "92cOWSbfbFCQ0KicSGRusdsWk+ib5/Sm7W0BFYDi5F4=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -765,7 +765,7 @@
               "ReturnType": "System.Void",
               "Parameters": []
             },
-            "MSILHash": "kysbaaDqo/o3O1CrDCTnDL0Y9pKSZopwpEKmWtRHpZ8=",
+            "MSILHash": "zFfagIzU/+wBWYynawU8j1zWZBJk09QMZuj02x9zgMw=",
             "BaseHookName": null,
             "HookCategory": "Server"
           }
@@ -914,7 +914,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 123,
+            "InjectionIndex": 128,
             "ReturnBehavior": 1,
             "ArgumentBehavior": 4,
             "ArgumentString": "l2",
@@ -932,7 +932,7 @@
                 "uLink.NetworkPlayer"
               ]
             },
-            "MSILHash": "1Kz6Utdqy5RbMdW4scMyyBfGPi/QYZexulfHbsUKvU8=",
+            "MSILHash": "0xRwplnlBGZ4c0zjJaF4s6r5uskbQobMndXGcqxLEmg=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -959,7 +959,7 @@
                 "EntityEffectSourceData"
               ]
             },
-            "MSILHash": "3bQsaR6iEfV993mN/anycECYNsn4xF9IRY1zI4S4Zdw=",
+            "MSILHash": "FzDKaLV4K7SxrqA2KLZ0C5bS+EWtEyZ4SzN8oXPw7kc=",
             "BaseHookName": null,
             "HookCategory": "Player"
           }
@@ -975,7 +975,7 @@
             "HookName": "FixDupeCommand",
             "AssemblyName": "Assembly-CSharp.dll",
             "TypeName": "ConsoleManager",
-            "Flagged": true,
+            "Flagged": false,
             "Signature": {
               "Exposure": 0,
               "Name": "ExecuteCommandRaw",
@@ -984,7 +984,7 @@
                 "System.String"
               ]
             },
-            "MSILHash": "L3TwL/A+bfdht36hBUNrYeddhsV5V0pSz5zU3YST3WM=",
+            "MSILHash": "OHdP9KLJ1UKPRJdLxCRp6JdNca1bjl5kmdppP1l34BM=",
             "BaseHookName": "OnRunCommand",
             "HookCategory": "Server"
           }
@@ -1103,30 +1103,6 @@
             "MSILHash": "UzBrDU3SXCoy2g1eFmw6rgM2RJvMmV3RiBBucoFTems=",
             "BaseHookName": null,
             "HookCategory": "Player"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
-            "InjectionIndex": 0,
-            "ReturnBehavior": 1,
-            "ArgumentBehavior": 1,
-            "ArgumentString": null,
-            "HookTypeName": "Simple",
-            "Name": "OnLootSpawnerUpdate",
-            "HookName": "OnLootSpawnerUpdate",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "LootSpawner",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 0,
-              "Name": "Update",
-              "ReturnType": "System.Void",
-              "Parameters": []
-            },
-            "MSILHash": "QLjSD2dSOHHhyEIe/32qhvwbFjSCAJc+lHse4NDQ/ew=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
           }
         }
       ]
